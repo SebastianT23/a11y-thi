@@ -2,6 +2,8 @@
     --primary-400: #111;
     --grey-100: #f7f7f7;
     --grey-200: #eee;
+    --secondary-400: #27009d;
+    --highlight: yellow;
 }
 
 html, body {
@@ -34,4 +36,20 @@ aside {
     background: var(--grey-100);
     border: 2px dashed var(--primary-400);
     padding: 0.5rem 2rem;
+}
+
+aside h2 {
+    font-size: 1.125em;
+}
+
+a,
+a:focus,
+a:hover,
+a:visited {
+    color: var(--secondary-400);
+}
+
+a:hover,
+a:focus-visible {
+    background: var(--highlight);
 }

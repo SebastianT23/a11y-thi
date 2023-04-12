@@ -169,6 +169,11 @@ dl.faq .desc {
     border-top: 0;
 }
 
+dl.faq .desc span {
+    display: block;
+    margin-bottom: 1rem;
+}
+
 dl.faq button:hover,
 dl.faq button:focus-visible {
     cursor: pointer;

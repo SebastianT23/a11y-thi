@@ -60,6 +60,7 @@ a:visited {
 a:hover,
 a:focus-visible {
     background: var(--highlight);
+    text-decoration: none;
 }
 
 img {

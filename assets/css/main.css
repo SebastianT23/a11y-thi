@@ -109,3 +109,37 @@ nav ul li a.active {
     top: 1rem;
     width: auto;
 }
+
+/* Tabs */
+.tab-panels {
+    border: 1px solid var(--primary-400);
+    padding: 1rem;
+}
+
+.tabs button {
+    -webkit-appearance: none;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    background: var(--grey-100);
+    padding: 1rem;
+    border: 1px solid var(--primary-400);
+    border-bottom: 0;
+    cursor: pointer;
+}
+
+.tabs button[aria-selected="true"] {
+    background: var(--grey-200);
+}
+
+.tabs button:focus-visible {
+    background: var(--highlight);
+}
+
+.tabs h3 {
+    margin-top: 0;
+}
+
+.tabs p {
+    margin-bottom: 0;
+}

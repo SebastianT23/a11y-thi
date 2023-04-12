@@ -28,9 +28,57 @@
 
             <p>Anhand dieser Seite illustrieren wir einige leitende Kriterien für die barrierefreie Webentwicklung.</p>
 
-            <h2>WAI-ARIA: Barrierefreie Tabs</h2>
+            <!-- Disclosure / FAQ / "Collapsibles" -->
+            <h2 lang="en">WAI-ARIA: Collapsibles</h2>
+            <dl class="faq">
+                <dt>
+                    <button type="button"
+                        aria-expanded="false"
+                        aria-controls="faq1_desc"
+                    >
+                        WAI-ARIA: roles
+                    </button>
+                </dt>
+                <dd>
+                    <div id="faq1_desc" class="desc">
+                        <span lang="en">
+                            ARIA roles provide semantic meaning to content, allowing screen readers and other tools to
+                            present and support interaction with object in a way that is consistent with user expectations
+                            of that type of object. ARIA roles can be used to describe elements that don't natively exist
+                            in HTML or exist but don't yet have full browser support.
+                        </span>
+                        <br>
+                        <small>
+                            <a
+                                rel="noreferrer"
+                                target="_blank"
+                                href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles"
+                            >
+                                https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
+                            </a>
+                        </small>
+                    </div>
+                </dd>
+                <dt>
+                    <button type="button"
+                        aria-expanded="false"
+                        aria-controls="faq2_desc"
+                    >
+                        Was muss ich tun, wenn ich meinen Ausweis verliere oder wenn er gestohlen wird?
+                    </button>
+                </dt>
+                <dd>
+                <div id="faq2_desc" class="desc">
+                    Sie sollten zum Parkbüro kommen und den Verlust melden. Für den Ersatz Ihres verlorenen Ausweises wird eine Gebühr
+                    erhoben. Wenn Ihr Ausweis jedoch gestohlen wurde, müssen Sie eine Kopie des Polizeiberichts zusammen mit einem
+                    Formular für einen gestohlenen Parkausweis vorgelegt werden, um von den Gebühren befreit zu werden.
+                </div>
+                </dd>
+            </dl>
 
             <!-- Tabs -->
+            <h2>WAI-ARIA: Barrierefreie Tabs</h2>
+
             <div class="tabs">
                 <div role="tablist" aria-label="Beispiel für barrierefreie Tabs">
                     <button
@@ -69,7 +117,7 @@
                 <div class="tab-panels">
                     <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
                         <h3>Überschrift Tab 1</h3>
-                        <p>"The ARIA tab role indicates an interactive element inside a tablist that, when activated,
+                        <p lang="en">"The ARIA tab role indicates an interactive element inside a tablist that, when activated,
                             displays its associated tabpanel."</p>
                     </div>
 
@@ -85,7 +133,7 @@
                 </div>
             </div>
 
-            <p>
+            <p lang="zxx">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
                 et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
@@ -95,7 +143,7 @@
             </p>
 
             <aside>
-                <h2>Hilfreiche Tools</h2>
+                <h2>Hilfreiche Tools &amp; Links</h2>
                 <ul>
                     <li>
                         <a
@@ -112,7 +160,34 @@
                             target="_blank"
                             href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role"
                         >
-                            WAI-ARIA: Tab role
+                            WAI-ARIA: Tab role (externer Link, öffnet in neuem Tab)
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href="https://w3c.github.io/aria/"
+                        >
+                            WAI-ARIA 1.3 (externer Link, öffnet in neuem Tab)
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href="https://www.w3.org/WAI/ARIA/apg/patterns/"
+                        >
+                            WAI-ARIA: Patterns (externer Link, öffnet in neuem Tab)
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href="https://www.youtube.com/watch?v=-ZO3QVgs-sk"
+                        >
+                            Introduction to WAI-ARIA (externer Link, öffnet in neuem Tab)
                         </a>
                     </li>
                 </ul>
@@ -132,5 +207,6 @@
 
     <!-- Scripts -->
     <script defer src="assets/js/tabs.js"></script>
+    <script defer src="assets/js/collapsibles.js"></script>
 </body>
 </html>

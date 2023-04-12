@@ -67,6 +67,10 @@ img {
     max-width: 100%;
 }
 
+main {
+    margin-bottom: 3rem;
+}
+
 /* Navigation */
 nav ul {
     margin: 0;

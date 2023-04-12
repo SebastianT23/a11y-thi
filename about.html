@@ -28,6 +28,22 @@
 
             <p>Anhand dieser Seite illustrieren wir einige leitende Kriterien für die barrierefreie Webentwicklung.</p>
 
+            <!-- Switch -->
+            <h2 lang="en">Switch</h2>
+            <div class="switch-container">
+                <button
+                    type="button"
+                    role="switch"
+                    aria-checked="false"
+                    id="switch"
+                    class="switch"
+                >
+                    <span>off</span>
+                    <span>on</span>
+                </button>
+                <label for="switch" class="switch">Ein- / ausschalten</label>
+            </div>
+
             <!-- Disclosure / FAQ / "Collapsibles" -->
             <h2 lang="en">WAI-ARIA: Collapsibles</h2>
             <dl class="faq">
@@ -220,5 +236,6 @@
     <!-- Scripts -->
     <script defer src="assets/js/tabs.js"></script>
     <script defer src="assets/js/collapsibles.js"></script>
+    <script defer src="assets/js/switch.js"></script>
 </body>
 </html>

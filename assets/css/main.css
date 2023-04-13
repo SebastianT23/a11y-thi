@@ -213,6 +213,26 @@ dl.faq button[aria-expanded="true"]::before {
     content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' style='forced-color-adjust: auto;'%3E%3Cpolygon points='1 1, 11 1, 6 8' fill='currentcolor' stroke= 'currentcolor' /%3E%3C/svg%3E ");
 }
 
+/* Details / Summary */
+details summary {
+    padding: 0.75rem;
+    background: var(--grey-100);
+    border: 1px solid var(--primary-400);
+}
+
+details summary:focus-visible {
+    background: var(--highlight);
+}
+
+details + details {
+    margin-top: 1rem;
+}
+
+details span {
+    display: block;
+    padding: 0.5rem 0 1rem;
+}
+
 /* Switch */
 .switch-container {
     display: flex;

@@ -63,7 +63,18 @@ a:focus-visible {
     text-decoration: none;
 }
 
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.125rem;
+    padding: 0.5rem 0;
+    font-style: italic;
+}
+
 img {
+    display: block;
     max-width: 100%;
 }
 
